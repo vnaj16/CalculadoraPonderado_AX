@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:CalculadoraPonderado_AX.ViewModel"
+             mc:Ignorable="d"
+             x:Class="CalculadoraPonderado_AX.Views.MainPage">
+        <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Bienvenido a Calculadora Ponderado!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="#142850" FontSize="25" HorizontalTextAlignment="Center"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="Ingresa tu número de cursos: " FontSize="16" TextColor="#00909e" Margin="0,15,0,0"/>
+                <Entry x:Name="EntryCantidadCursos" ReturnCommand="{Binding GoCalculationPageComand}" Keyboard="Numeric" Placeholder="5" WidthRequest="30" MaxLength="2"/>
+            </StackLayout>
+            <Button Margin="60,0,60,0" Text="Continuar" TextColor="White" Command="{Binding GoCalculationPageComand}" BackgroundColor="#00909e"></Button>
+            <StackLayout Margin="0,200,0,20">
+                <Label HorizontalOptions="Center" Text="Developed by Arthur Valladares - 2020" TextColor="#142850"></Label>
+                <Label HorizontalOptions="Center" Text="Made with Xamarin.Forms" FontSize="12" TextColor="#142850"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

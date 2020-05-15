@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:CalculadoraPonderado_AX.ViewModel"
+             mc:Ignorable="d"
+             x:Class="CalculadoraPonderado_AX.Views.CalculationPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,15,0,0" HorizontalOptions="Center">
+                <Label Text="Promedio Ponderado: " FontSize="20" TextColor="#142850"></Label>
+                <Label Text="{Binding PromedioCalculado}" FontSize="20" TextColor="#142850"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0">
+                <Label Margin="85,0,0,0" Text="Nombre" FontSize="16"></Label>
+                <Label Margin="78,0,0,0" Text="Créditos" FontSize="16"></Label>
+                <Label Margin="2,0,0,0" Text="Promedio" FontSize="16"></Label>
+            </StackLayout>
+
+
+            <StackLayout x:Name="StackLayout_Cursos" Margin="0,10,0,0">
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Text="Regresar"  Command="{Binding GoMainPageComand}" CornerRadius="10" BackgroundColor="#00005c" TextColor="White"/>
+                <Button Text="Calcular" Command="{Binding CalculateComand}" CornerRadius="10" BackgroundColor="#00005c" TextColor="White"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
