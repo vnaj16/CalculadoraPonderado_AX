@@ -1,6 +1,8 @@
 # Calculadora Ponderado
 App móvil que te ayuda a calcular tu promedio ponderado (Actualmente solo disponible para Android 9.0 Pie)
 
+* Versión iOS: falta compilar
+
 Con Calculadora Ponderado puedes
 * Ingresar tu cantidad de cursos que llevas actualmente
 * Ingresar los datos (Nombre, Créditos y Promedio) de esos cursos
