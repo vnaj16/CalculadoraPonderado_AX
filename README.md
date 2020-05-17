@@ -13,5 +13,5 @@ Con Calculadora Ponderado puedes
 * Min Android 9.0 Pie
 
 ## Pasos
-* Descargar el APK que se encuentra en la seccion Release
+* Descargar el APK que se encuentra en la seccion Release (https://github.com/vnaj16/CalculadoraPonderado_AX/releases)
 * Abrir el APK en tu celular para instalarlo
